@@ -1,0 +1,13 @@
+
+n = int(input())
+a = 1
+b = 1
+l = []
+l.append(a)
+l.append(b)
+for i in range(n - 2):
+  c = a + b
+  l.append(c)
+  b = a
+  a = c
+print(l[n-1])  
